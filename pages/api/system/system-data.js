@@ -38,7 +38,7 @@ export default async function handler(req, res) {
 
     // Consultar serviços
     const serviceResult = await crmPool.query(
-      "SELECT id, display_name, value, status, type_value FROM public.options_service ORDER BY id"
+      "SELECT id, display_name, value, status, type FROM public.options_service ORDER BY id"
     );
     const services = serviceResult.rows;
 

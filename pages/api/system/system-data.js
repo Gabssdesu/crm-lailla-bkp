@@ -51,7 +51,7 @@ export default async function handler(req, res) {
 
     // Separar os serviços em appointments e treatments
     const appointments = services
-      .filter((service) => service.type_value === "consulta")
+      .filter((service) => service.type === "consulta")
       .map((service) => ({
         id: service.id,
         display_name: service.display_name,
@@ -60,7 +60,7 @@ export default async function handler(req, res) {
       }));
 
     const treatments = services
-      .filter((service) => service.type_value !== "consulta")
+      .filter((service) => service.type!== "consulta")
       .map((service) => ({
         id: service.id,
         display_name: service.display_name,

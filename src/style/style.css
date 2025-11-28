@@ -1,0 +1,887 @@
+.fundo {
+  background-color: rgb(226, 239, 254);
+  overflow-x: hidden;
+}
+
+/* 
+#2d3443 
+
+#517ac1 
+
+#d1e3f7 
+
+#577ea0 
+
+#739bbf 
+
+#9fbbd8
+
+
+#5c6c84  */
+
+html,
+body,
+#root {
+  background-color: rgb(226, 239, 254);
+}
+
+
+#Form {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-top: 25px;
+}
+
+.FormContainer {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  width: 100%;
+  gap: 10px;
+}
+
+.caixa {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-left: auto;
+  margin-top: 27px;
+  margin-right: auto;
+  width: 400px;
+  height: 50px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.RadioButtonsLinha {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.campos {
+  margin-right: 6px;
+  margin-left: 6px;
+  width: 280px !important;
+}
+
+.dropdownNav {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #3b4450 !important;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007ad9;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #005bb5;
+  transform: scale(1.1);
+}
+
+.scroll-to-top i {
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .campos {
+    width: 250px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .campos {
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .campos {
+    width: 190px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .campos {
+    width: 100px !important;
+  }
+}
+
+.tabelaAtendimento {
+  width: 1000px;
+  margin: 10px;
+
+}
+
+.p-datatable-header {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.p-paginator-bottom {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.tabela-produtos {
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 750px;
+}
+
+.campo-add-product {
+  width: 100%;
+}
+
+[id^="dropdownItem_"]:not(:focus) {
+  background-color: white;
+}
+
+ol,
+ul {
+  padding-left: 0 !important;
+}
+
+/* 
+.badge-followup{
+  width: 10px!important;
+  height: 10px!important;
+} */
+
+.dropdown-item:focus,
+.dropdown-item:active,
+.dropdown-item:hover {
+  background-color: #3b4450 !important;
+  color: #fff !important;
+}
+
+.dropdown-item:hover {
+  background-color: #3b4450 !important;
+  color: #94baf6 !important;
+}
+
+.dropdown-item.active {
+  background-color: #3b4450 !important;
+}
+
+.no-border .p-inputtext {
+  border: none !important;
+  box-shadow: none !important;
+  width: 44px;
+  text-align: center;
+}
+
+.confirma-info {
+  margin: 2px;
+}
+
+.container-navbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 10 !important;
+}
+
+.custom-navbar .nav-link {
+  border-radius: 0;
+  transition: border-radius 0.3s ease, color 0.3s ease;
+  font-size: 17px;
+  color: #fff;
+}
+
+.custom-navbar.navbar.navbar-expand-sm.navbar-light {
+  background-color: #3b4450 !important;
+}
+
+/* 
+[aria-expanded="false"] {
+  color: white !important;
+} */
+.p-card-content {
+  padding-top: 0px !important;
+}
+
+.show {
+  background-color: #3b4450 !important;
+  color: #fff !important;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #94baf6;
+  border-radius: 8px;
+  /* background-color: rgb(63, 63, 63); */
+}
+
+.custom-navbar .nav-link.active {
+  color: #94baf6 !important;
+  /* background-color: rgb(63, 63, 63); */
+  border-radius: 8px;
+}
+
+.p-divider::after {
+  border: none !important;
+  /* Remove as bordas */
+  background-color: transparent !important;
+  /* Remove qualquer cor residual */
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: none !important;
+  border-color: none !important;
+  color: #6b7280 !important;
+}
+
+.custom-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) 0;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-contact-card {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
+}
+
+.TLCaixa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cardLinha {
+  width: 100%;
+  margin: 10px;
+}
+
+.caixaValorTL {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 100%;
+  border-radius: 10px;
+
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.ResumoTL {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.caixa-campos-juntos {
+  display: flex;
+}
+
+.campos-juntos {
+  width: 50%;
+}
+
+.p-button .ver-menos {
+  display: flex;
+  flex-direction: row;
+  width: 130px;
+  height: 44px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: transparent;
+  border-color: red;
+  color: red;
+  border-width: 0px;
+  margin-top: -10px;
+  margin-bottom: -8px;
+}
+
+span.ver-menos {
+  margin: 0px !important;
+  padding: 12px !important;
+  text-align: center;
+}
+
+span.ver-menos:hover {
+  background-color: #f3f4f6;
+}
+
+.p-inplace-content-close.p-button.p-component.p-button-icon-only {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: red !important;
+  width: 147px;
+  border-radius: 8px;
+  margin: 0px;
+  padding: 8px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+.p-inplace-content-close.p-button.p-component.p-button-icon-only:hover {
+  background-color: #f3f4f6;
+}
+
+.p-button:focus {
+  box-shadow: none;
+}
+
+.p-inplace-display {
+  font-weight: bold;
+  color: #1bc2cb;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 100px;
+}
+
+.p-card-subtitle {
+  font-size: large;
+  font-weight: bolder;
+}
+
+
+
+#card-client {
+  width: 1000px;
+  /* width: 550px; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px !important;
+}
+
+#card-client .p-card-body {
+  padding: 18px !important;
+  margin: 0px !important;
+}
+
+#card-client .p-card-content {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+#card-client .p-card .p-component {
+  padding: 10px !important;
+  margin: 10px !important;
+}
+
+.card-client-content {
+  display: flex;
+  flex-direction: row;
+  width: 950px;
+  justify-content: space-between;
+}
+
+.card-client-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.card-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.info-item {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+
+.info-label {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.info-icon {
+  font-size: 18px;
+}
+
+.info-value {
+  margin-bottom: 0px;
+}
+
+.card {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 95vw;
+  }
+}
+
+.FormContainer {
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+  width: 100%;
+  gap: 10px;
+}
+
+#card-macros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-macros-content {
+  margin-top: -20px;
+  width: 900px;
+}
+
+#card-transfer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.campoValor input {
+  width: 150px !important;
+  margin-right: 9px !important;
+}
+
+.card-iniciar-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  text-align: center;
+  padding-bottom: -20px;
+}
+
+.grupo-macros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.grupo-transf-campos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.custom-navbar {
+  width: 100vw !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 10 !important;
+}
+
+.campos-transf {
+  width: 34vw !important;
+  margin: 0px 4px 0px 4px;
+}
+
+.p-divider-content {
+  z-index: 1 !important;
+}
+
+.tag-platform {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  width: 95px;
+  justify-content: center;
+  margin: 1px;
+  margin-left: 10px;
+}
+
+.tag-platform-icon {
+  margin-right: 3px;
+  color: black;
+}
+
+.tag-platform-text {
+  color: black;
+  font-size: 11px;
+  margin: 0;
+}
+
+.tag-follow-up {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  width: 95px;
+  justify-content: center;
+  margin: 1px;
+  background-color: #94baf6;
+  margin-bottom: 18px;
+}
+
+.tag-follow-up-text {
+  color: white;
+  font-size: 11px;
+  margin: 0;
+}
+
+.customized-timeline {
+  width: 1000px;
+}
+
+.btn-macro {
+  margin: 5px;
+  width: 30%;
+  border-radius: 8px;
+  white-space: nowrap;
+  height: 6vh;
+  font-size: 0.9em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-macro:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.p-button-initcontact {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.p-button-initcontact:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-transf {
+  margin: 5px;
+  margin-top: 25px;
+  border-radius: 8px;
+  width: calc(50% - 10px);
+  white-space: nowrap;
+  height: 6vh;
+  font-size: calc(0.9em - 10%);
+}
+
+.p-datepicker table td>span.p-highlight {
+  background-color: #1bcba87a;
+}
+
+.p-datepicker table td.p-datepicker-today>span.p-highlight {
+  background-color: #1bcba87a;
+}
+
+.logo-lailla {
+  width: 120px;
+  height: 40px;
+}
+
+#origin-platform-icon::before {
+  color: black;
+  width: 30px !important;
+  height: 30px !important;
+  font-size: 14px;
+  /* margin-right: 4px; */
+  line-height: 1;
+}
+
+#origin-platform-icon {
+  font-size: 18px;
+  /* Tamanho do ícone */
+  line-height: 1;
+  /* Garante que o ícone não seja cortado */
+}
+
+.p-datatable .p-datatable-tbody>tr>td,
+.p-datatable .p-datatable-thead>tr>th {
+  text-align: center;
+}
+
+.payment-table th {
+  padding: 11px !important;
+}
+
+.payment-table tr {
+  height: 15px !important;
+}
+
+.payment-table td {
+  padding: 5px !important;
+}
+
+.p-column-header-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.p-datatable-thead,
+th,
+tr {
+  height: 1px !important;
+}
+
+.p-datepicker-calendar {
+  text-align: center;
+}
+
+@media (max-width: 1010px) {
+  #card-client {
+    width: 95vw !important;
+  }
+
+  .card-client-content {
+    width: 92vw;
+  }
+
+  #card-macros {
+    width: 95vw !important;
+  }
+
+  .card-macros-content {
+    width: 92vw;
+  }
+
+  .customized-timeline {
+    width: 98vw !important;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .custom-navbar {
+    width: 100vw !important;
+    position: sticky !important;
+    z-index: 10 !important;
+  }
+
+  .p-divider {
+    z-index: 1 !important;
+  }
+
+  .nav-link {
+    margin: 3px !important;
+  }
+
+  .campos {
+    width: 30vw !important;
+  }
+
+  .campos-transf {
+    width: 34vw !important;
+    margin: 0px 4px 0px 4px;
+    /* top right bottom left */
+  }
+
+  .grupo-transf-campos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    font-size: 15 px !important;
+    padding: 3px !important;
+    flex-wrap: wrap;
+  }
+
+  .logo-lailla {
+    width: 100px !important;
+    height: 35px !important;
+  }
+
+  .btn-macro {
+    font-size: 12px;
+  }
+
+  .btn-salvar-dados {
+    font-size: 13px !important;
+    margin-left: 15px !important;
+  }
+}
+
+@media (max-width: 765px) {
+  .custom-navbar {
+    width: 100vw !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 10 !important;
+  }
+
+  .custom-navbar .nav-link {
+    font-size: 14px !important;
+    white-space: nowrap;
+  }
+
+  .container-navbar {
+    margin: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 80vw !important;
+  }
+
+  .ultima-interacao,
+  .follow_up {
+    width: 25vw !important;
+  }
+}
+
+@media (max-width: 899px) {
+  .campos {
+    width: 30vw !important;
+  }
+
+  .caixa-campos-juntos {
+    flex-wrap: wrap;
+  }
+
+  .campos-juntos {
+    width: 45%;
+  }
+
+  .card-macros {
+    width: 100vw !important;
+  }
+
+  .logo-lailla {
+    margin-left: -60px !important;
+    width: 100px !important;
+    height: 35px !important;
+  }
+
+  .btn-macro {
+    font-size: 11px;
+  }
+
+  .btn-salvar-dados {
+    font-size: 13px !important;
+  }
+
+  .cardLinha,
+  .ResumoTL {
+    font-size: 0.9em !important;
+  }
+
+  .detalhes {
+    font-size: 1em !important;
+  }
+
+  .p-card-title {
+    font-size: 1.4em !important;
+  }
+
+
+
+  .p-card-subtitle {
+    font-size: 1em !important;
+  }
+
+  #card-client {
+    /* width: 70vw !important; */
+    font-size: 0.8em !important;
+  }
+
+  #card-client h6 {
+    font-size: 1.1em !important;
+  }
+
+  #card-client h5 {
+    font-size: 1.3em !important;
+  }
+
+  #card-client .p-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .info-icon {
+    font-size: 13px;
+  }
+
+
+  .p-avatar.p-avatar-xl .p-avatar-icon {
+    font-size: 1.2rem;
+  }
+
+  #iconePlataformaOrigem {
+    font-size: 1.2rem;
+  }
+
+  .ResumoTL {
+    font-size: 1rem !important;
+  }
+
+  .ResumoTL h5 {
+    font-size: 1.1rem !important;
+  }
+}
+
+.item-config {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 8px 0px 0px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.item-config:hover {
+  background-color: #f3f4f6;
+}
+
+.delete-option{
+  color: red;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.agent-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8f9fa;
+  padding: 5px 7px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

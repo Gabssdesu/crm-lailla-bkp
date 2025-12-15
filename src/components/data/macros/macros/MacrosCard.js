@@ -26,7 +26,7 @@ export default function MacrosCard({
     ? [
       {
         name: "Limpar Contato",
-        url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/utilitarias?value=limpa-tudo",
+        url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/utilitarias?value=limpa-tudo",
         emoji: "🧹",
         icon: "pi pi-eraser",
       },
@@ -34,25 +34,25 @@ export default function MacrosCard({
     : [
       {
         name: "Limpar Contato",
-        url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/utilitarias?value=limpa-tudo",
+        url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/utilitarias?value=limpa-tudo",
         emoji: "🧹",
         icon: "pi pi-eraser",
       },
       {
         name: "Interna",
-        url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/utilitarias?value=interna",
+        url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/iniciadores?value=interna",
         emoji: "🏢",
         icon: "pi pi-building",
       },
       {
         name: "Prestador",
-        url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/utilitarias?value=prestador",
+        url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/iniciadores?value=prestador",
         emoji: "🧑‍💼",
         icon: "pi pi-briefcase",
       },
       {
         name: "Não Aplica",
-        url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/utilitarias?value=nao-aplica",
+        url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/iniciadores?value=nao-aplica",
         emoji: "🚫",
         icon: "pi pi-times-circle",
       },
@@ -61,43 +61,43 @@ export default function MacrosCard({
   const comercial_funnel = [
     {
       name: "Abordagem",
-      url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=abordagem",
+      url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=abordagem",
       emoji: "🤝",
       icon: "pi pi-face-smile",
     },
     {
       name: "Investigação",
-      url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=investigacao",
+      url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=investigacao",
       emoji: "🔍",
       icon: "pi pi-search",
     },
     {
       name: "Valorização",
-      url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=valorizacao",
+      url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=valorizacao",
       emoji: "✅",
       icon: "pi pi-check",
     },
     {
       name: "Apresentação",
-      url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=apresentacao",
+      url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=apresentacao",
       emoji: "📊",
       icon: "pi pi-chart-bar",
     },
     {
       name: "Agendamento",
-      url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=agendamento",
+      url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=agendamento",
       emoji: "📅",
       icon: "pi pi-calendar",
     },
     {
       name: "Objeção",
-      url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=objecao",
+      url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=objecao",
       emoji: "❓",
       icon: "pi pi-question-circle",
     },
     {
       name: "Descartado",
-      url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=descartado",
+      url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=descartado",
       emoji: "🗑️",
       icon: "pi pi-trash",
     },
@@ -106,32 +106,32 @@ export default function MacrosCard({
   const relationship_funnel = [
     {
       name: "Acompanhamento",
-      url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=acompanhamento",
+      url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=acompanhamento",
       emoji: "📋",
       icon: "pi pi-list",
     },
     {
       // name: "Paciente ativo",
       name: "Consulta",
-      url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=agendado",
+      url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=agendado",
       emoji: "✅",
       icon: "pi pi-check-square",
     },
     {
       name: "Pós-Consulta",
-      url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=paciente-ativo",
+      url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=paciente-ativo",
       emoji: "✅",
       icon: "pi pi-check",
     },
     {
       name: "Consulta domiciliar",
-      url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=consulta-domiciliar",
+      url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=consulta-domiciliar",
       emoji: "🏠",
       icon: "pi pi-home",
     },
     {
       name: "Paciente inativo",
-      url: "https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=paciente-inativo",
+      url: "https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=paciente-inativo",
       emoji: "❌",
       icon: "pi pi-times-circle",
     },
@@ -208,7 +208,7 @@ export default function MacrosCard({
       return;
     }
     const macroValue = selectedMacro === "Consulta" ? "agendado" : selectedMacro.toLowerCase();
-    const serviceURL = `https://enginewh.clientelaila.com.br/webhook/lailla/medicos/macros/etapas?value=${macroValue}&service=${encodeURIComponent(selectedService)}`;
+    const serviceURL = `https://enginewebhook.w44.unigate.com.br/webhook/medicos/macros/etapas?value=${macroValue}&service=${encodeURIComponent(selectedService)}`;
 
     handleMacro(selectedMacro, serviceURL);
 

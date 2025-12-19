@@ -76,7 +76,7 @@ export default function PaymentsModal({
       amount: newAmount,
       method: newPayment.method,
       date: new Date().toISOString(),
-      is_sign: checked,
+      ...(checked && { is_sign: true }),
     };
 
     const updatedPayments = [...(sale.payments || []), newPay];
@@ -125,9 +125,19 @@ export default function PaymentsModal({
         return response.json();
       })
       .then((data) => {
-        setSales(data);
-        const index = data.findIndex((item) => item.sale_id === sale.sale_id);
-        setSale(data[index]);
+        if (Array.isArray(data)) {
+          setSales(data);
+          const index = data.findIndex((item) => item.sale_id === sale.sale_id);
+          if (index !== -1) {
+            setSale(data[index]);
+          }
+        } else if (data && typeof data === 'object') {
+          // Se retornar um objeto único, usar ele como a venda atualizada
+          setSale(data);
+          setSales((prev) =>
+            prev.map((s) => (s.sale_id === data.sale_id ? data : s))
+          );
+        }
         toast.current.show({
           severity: "success",
           summary: "Sucesso",

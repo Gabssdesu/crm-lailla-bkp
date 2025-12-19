@@ -76,7 +76,7 @@ export default function PaymentsModal({
       amount: newAmount,
       method: newPayment.method,
       date: new Date().toISOString(),
-      ...(checked && { is_sign: true }),
+      is_sign: checked,
     };
 
     const updatedPayments = [...(sale.payments || []), newPay];
